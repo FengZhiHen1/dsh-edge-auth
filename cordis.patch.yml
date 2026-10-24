@@ -1,0 +1,4 @@
+# 无 Client 半区：展示文案走 locale/，运行时行为与配置都由导出的 Config schema 承担。
+- insert:
+    - id: edge-auth
+      name: dsh-edge-auth

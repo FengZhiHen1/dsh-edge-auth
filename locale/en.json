@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Edge authentication",
+    "description": "Accept requests already authenticated by an edge proxy such as Cloudflare Access, so browsers need no DSH launch-token login."
+  }
+}

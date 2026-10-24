@@ -1,0 +1,47 @@
+{
+  "name": "dsh-edge-auth",
+  "version": "0.1.0",
+  "description": "Accept requests already authenticated by an edge proxy (Cloudflare Access) as DSH owner sessions, so browsers need no launch-token login.",
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FengZhiHen1/dsh-edge-auth.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/schemastery": "^3.18.4"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check index.js && node --check src/adapter/host.js && node --check src/core/edge-claim.js && node --check src/core/edge-bridge.js && node --test test/*.test.mjs"
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24",
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "files": [
+    "index.js",
+    "icon.svg",
+    "src/",
+    "locale/",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  }
+}

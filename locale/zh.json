@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "边缘认证",
+    "description": "认同边缘代理（如 Cloudflare Access）已认证的请求，使浏览器无需 DSH 启动 token 登录。"
+  }
+}
