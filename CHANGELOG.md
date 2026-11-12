@@ -1,5 +1,10 @@
 # Unreleased
 
+## 0.1.1
+
+- 声明口径确认并发布：`engines.dsh` 维持 `>=0.2.1-rc.2 <0.3.0-0`（覆盖 0.2.1-rc.2 与 0.2.2-rc.1，不对 0.3 作承诺）；`peerDependencies` 仅 `@deepseek-ai/cordis` 与 `@deepseek-ai/schemastery`——本插件不 import 任何 `@deepseek-ai/dsh-*` 包，宿主能力经 `ctx.connection` / `ctx.logger` 注入，版本门禁由 `engines.dsh` 单独决定。
+- 行为零变化：本版不含代码改动，包含 2026-10-24 的计划文档提交。
+
 ## 0.1.0
 
 - 首个版本：把带边缘认证断言（默认 `Cf-Access-Jwt-Assertion`）的请求认作已认证的 owner 浏览器会话，

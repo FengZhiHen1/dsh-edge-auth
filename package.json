@@ -1,6 +1,6 @@
 {
   "name": "dsh-edge-auth",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Accept requests already authenticated by an edge proxy (Cloudflare Access) as DSH owner sessions, so browsers need no launch-token login.",
   "icon": "./icon.svg",
   "license": "MIT",
